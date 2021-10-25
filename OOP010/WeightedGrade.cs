@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP010
 {
-    public class WeightedGrade:Grade
+    public class WeightedGrade:Grade //creates the WeightedGrade class inherited from Grade
     {
         private double weight;
 
@@ -12,7 +12,7 @@ namespace OOP010
         {
             this.weight = assignmentWeight;
         }
-        public override double getGrade()
+        public override double getGrade() //overrides the getGrade function inherited from Grade
         {
             return grade*weight; //calculates % of the grade
         }

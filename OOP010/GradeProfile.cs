@@ -7,7 +7,7 @@ namespace OOP010
 {
     class GradeProfile
     {
-        private List<Grade> grades = new List<Grade>();
+        private List<Grade> grades = new List<Grade>(); //creates a list of grades from the Grade class
 
         public void AddGrade(Grade g)
         {

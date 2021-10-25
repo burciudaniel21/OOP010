@@ -7,7 +7,7 @@ namespace OOP010
     {
         static void Main(string[] args)
         {
-            Display display = new Display();
+            Class display = new Class();
 
             display.InMenu();
             /*GradeProfile gp = new GradeProfile();

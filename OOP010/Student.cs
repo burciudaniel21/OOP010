@@ -8,14 +8,22 @@ namespace OOP010
     {
         private string name, address;
         private int age;
-
         private GradeProfile gradeProfile = new GradeProfile();
-        public Student(string studentName)
+        public Student(string studentName) //constructor of Student
         {
             name = studentName;
         }
 
-        public List<Grade> GetGrades()
+        public string SetName()
+        {
+            Console.WriteLine("Input student name:");
+            name = Console.ReadLine();
+            return name;
+        }
+
+
+
+        public List<Grade> GetGrades() //reutrns the grades from the Grade list
         {
             return gradeProfile.GetGrades();
         }
@@ -40,6 +48,8 @@ namespace OOP010
             return gradeProfile.GetAverage(); //calculates the average of the grades from GradeProfile.
         }
 
+        
+
         public string Name
         {
             get { return this.name; }
@@ -51,6 +61,25 @@ namespace OOP010
             get { return this.address; }
             set { this.address = value;}
         }
+
+        /*public void PrintStudent(Student student)
+        {
+
+            int studentNr;
+            Console.WriteLine("Input student number:");
+            Int32.TryParse(Console.ReadLine(), out studentNr);
+            if (studentNr <= CountStudents())
+            {
+                Console.Write($"Student grades are: \n");
+                foreach (Grade grade in students[studentNr].GetGrades()) //returns the grade linked to the student object
+                {
+                    Console.WriteLine($" Module: {grade.getModule}, assignment: {grade.getAssignment}, grade: {grade.getGrade()}");
+
+                }
+            }
+            
+        }*/
+
 
 
     }
