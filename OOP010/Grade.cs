@@ -16,7 +16,10 @@ namespace OOP010
             this.grade = studentGrade;
             this.moduleName = module;
         }
-
+        public virtual double GetInitialGrade()
+        {
+            return grade;
+        }
         public int getAssignment
         {
             get { return this.assignment; }
@@ -27,9 +30,11 @@ namespace OOP010
             get { return this.moduleName; }
         }
 
-        public virtual double getGrade()
+        public virtual double GetGrade()
         {
             return grade;
         }
+
+
     }
 }

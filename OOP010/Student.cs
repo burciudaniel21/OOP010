@@ -21,8 +21,6 @@ namespace OOP010
             return name;
         }
 
-
-
         public List<Grade> GetGrades() //reutrns the grades from the Grade list
         {
             return gradeProfile.GetGrades();
@@ -47,8 +45,6 @@ namespace OOP010
         {
             return gradeProfile.GetAverage(); //calculates the average of the grades from GradeProfile.
         }
-
-        
 
         public string Name
         {

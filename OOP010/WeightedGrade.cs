@@ -12,7 +12,12 @@ namespace OOP010
         {
             this.weight = assignmentWeight;
         }
-        public override double getGrade() //overrides the getGrade function inherited from Grade
+
+        public override double GetInitialGrade()
+        {
+            return grade;
+        }
+        public override double GetGrade() //overrides the getGrade function inherited from Grade
         {
             return grade*weight; //calculates % of the grade
         }

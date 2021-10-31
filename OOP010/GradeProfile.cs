@@ -9,9 +9,9 @@ namespace OOP010
     {
         private List<Grade> grades = new List<Grade>(); //creates a list of grades from the Grade class
 
-        public void AddGrade(Grade g)
+        public void AddGrade(Grade grade)
         {
-            grades.Add(g); //adds a grade to the list
+            grades.Add(grade); //adds a grade to the list
         }
 
         public void CleanGrades()
@@ -31,11 +31,11 @@ namespace OOP010
             {
                 if (!moduleGrades.ContainsKey(grade.getModule)) //verifies if the Key exists
                 {
-                    moduleGrades[grade.getModule] = grade.getGrade(); //gets grades for the specified module
+                    moduleGrades[grade.getModule] = grade.GetGrade(); //gets grades for the specified module
                 }
                 else
                 {
-                    moduleGrades[grade.getModule] += grade.getGrade(); //if a grade already exists, adds the value to the grade
+                    moduleGrades[grade.getModule] += grade.GetGrade(); //if a grade already exists, adds the value to the grade
                 }
 
             }
